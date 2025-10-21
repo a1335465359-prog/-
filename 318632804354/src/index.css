@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 默认背景 - 不饱和的天蓝色到浅青色渐变 */
+.bg-default {
+  background: linear-gradient(135deg, #e6f2f8 0%, #f0f7fa 50%, #e6f2f8 100%);
+}
+
+/* 甜美/少女风背景 - 不饱和的樱花粉到淡粉色渐变 */
+.bg-sweet {
+  background: linear-gradient(135deg, #fce8f0 0%, #fff0f5 50%, #fce8f0 100%);
+}
+
+/* 休闲/通勤风背景 - 不饱和的米褐色到浅棕色渐变 */
+.bg-casual {
+  background: linear-gradient(135deg, #f5f0e6 0%, #f8f4e8 50%, #f5f0e6 100%);
+}
+
+/* 性感/派对风背景 - 不饱和的紫粉色到浅紫色渐变 */
+.bg-sexy {
+  background: linear-gradient(135deg, #f6e6f0 0%, #f9f0f6 50%, #f6e6f0 100%);
+}
+
+/* 波西米亚/度假风背景 - 不饱和的淡橙色到米色渐变 */
+.bg-bohemian {
+  background: linear-gradient(135deg, #f9f2e6 0%, #fff3e6 50%, #f9f2e6 100%);
+}
+
+/* 简约/轻时尚风背景 - 不饱和的灰色到白色渐变 */
+.bg-minimalist {
+  background: linear-gradient(135deg, #f5f5f5 0%, #f9f9f9 50%, #f5f5f5 100%);
+}
+
+/* SHEIN全球站点背景 - 不饱和的天蓝色到浅蓝绿色渐变 */
+.bg-sheinGlobal {
+  background: linear-gradient(135deg, #e6f2f8 0%, #f0f7fa 50%, #e6f2f8 100%);
+}
+
+/* 背景切换动画 */
+.bg-transition {
+  transition: opacity 0.4s ease-in-out;
+}
+
+/* 确保页面内容容器有适当的背景色和阴影，提高可读性 */
+.container {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* 4:3 比例的容器样式 */
+.aspect-4-3 {
+  aspect-ratio: 4/3;
+}
+
+/* 弹窗动画 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.3s ease-out forwards;
+}
