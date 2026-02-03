@@ -14,8 +14,6 @@ const Header: React.FC = () => {
             setActiveNavItem("home");
         } else if (location.pathname === "/shein-global") {
             setActiveNavItem("shein-global");
-        } else if (location.pathname === "/digital-art") {
-            setActiveNavItem("digital-art");
         } else {
             // 检查是否是分类页面
             const match = location.pathname.match(/\/category\/(\w+)/);
@@ -76,14 +74,6 @@ const Header: React.FC = () => {
                             ? "mr-3 px-4 py-2 bg-pink-100 text-pink-600 rounded-full transition-colors duration-300 whitespace-nowrap"
                             : "mr-3 px-4 py-2 bg-gray-100 text-gray-700 hover:bg-pink-50 rounded-full transition-colors duration-300 whitespace-nowrap"}>定向风格
                                                                                              </Link>
-                    <Link
-                        to="/digital-art"
-                        onClick={() => handleNavClick("digital-art")}
-                        className={activeNavItem === "digital-art" 
-                            ? "mr-3 px-4 py-2 bg-pink-100 text-pink-600 rounded-full transition-colors duration-300 whitespace-nowrap"
-                            : "mr-3 px-4 py-2 bg-gray-100 text-gray-700 hover:bg-pink-50 rounded-full transition-colors duration-300 whitespace-nowrap"}>
-                        数字艺术
-                    </Link>
                     <div className="w-full max-w-xl">
                         <form onSubmit={handleSearch} className="relative">
                             <input
