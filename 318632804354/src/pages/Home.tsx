@@ -155,6 +155,30 @@ export default function Home() {
         <div>
             <Header />
             <main className="pt-48 pb-12">
+                <section className="py-8">
+                    <div className="container mx-auto px-4">
+                        <Link
+                            to="/digital-art"
+                            className="group relative overflow-hidden rounded-3xl border border-white/60 bg-gradient-to-r from-black via-neutral-900 to-neutral-800 p-8 text-white shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl">
+                            <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                                <div className="absolute -top-16 -right-10 h-48 w-48 rounded-full bg-pink-500/30 blur-3xl"></div>
+                                <div className="absolute -bottom-16 -left-10 h-48 w-48 rounded-full bg-purple-500/30 blur-3xl"></div>
+                            </div>
+                            <div className="relative z-10 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+                                <div>
+                                    <h2 className="text-2xl md:text-3xl font-semibold mb-2">数字艺术粒子实验室</h2>
+                                    <p className="text-white/70 max-w-2xl">
+                                        上传图片，生成可拖拽旋转的粒子云效果，快速复刻伪 3D 数字艺术风格。
+                                    </p>
+                                </div>
+                                <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-5 py-2 text-sm font-medium">
+                                    立即体验
+                                    <i className="fas fa-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
+                                </span>
+                            </div>
+                        </Link>
+                    </div>
+                </section>
                 {}
                 <section className="py-12">
                     <div
