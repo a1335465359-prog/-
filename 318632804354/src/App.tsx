@@ -20,7 +20,8 @@ export default function App() {
     >
       <BackgroundManager>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<DigitalArtLab />} />
+          <Route path="/styles" element={<Home />} />
           <Route path="/category/:categoryId" element={<CategoryPage />} />
           <Route path="/shein-global" element={<SheinGlobalPage />} />
           <Route path="/digital-art" element={<DigitalArtLab />} />

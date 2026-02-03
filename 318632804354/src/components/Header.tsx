@@ -11,6 +11,8 @@ const Header: React.FC = () => {
     // 当路由变化时更新活动导航项
     useEffect(() => {
         if (location.pathname === "/") {
+            setActiveNavItem("");
+        } else if (location.pathname === "/styles") {
             setActiveNavItem("home");
         } else if (location.pathname === "/shein-global") {
             setActiveNavItem("shein-global");
@@ -28,7 +30,7 @@ const Header: React.FC = () => {
 
         if (searchTerm.trim()) {
             // 使用replace方法确保完全替换当前URL，避免历史记录堆积
-            navigate(`/?term=${encodeURIComponent(searchTerm.trim())}`, { replace: true });
+            navigate(`/styles?term=${encodeURIComponent(searchTerm.trim())}`, { replace: true });
         }
     };
 
@@ -68,7 +70,7 @@ const Header: React.FC = () => {
                         padding: "16px"
                     }}>
                     <Link
-                        to="/"
+                        to="/styles"
                         onClick={() => handleNavClick("home")}
                         className={activeNavItem === "home" 
                             ? "mr-3 px-4 py-2 bg-pink-100 text-pink-600 rounded-full transition-colors duration-300 whitespace-nowrap"
