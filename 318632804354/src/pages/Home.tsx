@@ -91,7 +91,7 @@ export default function Home() {
                             {searchResults.websites.length === 0 && searchResults.sheinSites.length === 0 ? <div className="text-center py-12">
                                 <p className="text-xl text-gray-600 mb-8">没有找到匹配的结果</p>
                                 <Link
-                                    to="/"
+                                    to="/styles"
                                     className="inline-flex items-center px-4 py-2 bg-blue-50 text-blue-600 rounded-full hover:bg-blue-100 transition-colors duration-300">
                                     <i className="fas fa-arrow-left mr-2"></i>返回首页
                                                                                           </Link>
@@ -137,7 +137,7 @@ export default function Home() {
                                 </div>}
                                 <div className="text-center mt-12">
                                     <Link
-                                        to="/"
+                                        to="/styles"
                                         className="inline-flex items-center px-4 py-2 bg-blue-50 text-blue-600 rounded-full hover:bg-blue-100 transition-colors duration-300">
                                         <i className="fas fa-arrow-left mr-2"></i>返回首页
                                                                                                     </Link>
